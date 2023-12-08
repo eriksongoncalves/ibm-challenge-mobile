@@ -40,7 +40,7 @@ npm run develop
 
 - acesse `http://localhost:1337/admin` e crie o seu usuário.
 
-- acesse no menu `Settings > Roles(users & permissions)` e dê permissões para as seguintes rotas:
+- acesse no menu `Settings > Roles(users & permissions)` e de permissões para as seguintes rotas:
 
 ```
   Authenticated

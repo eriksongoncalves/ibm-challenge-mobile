@@ -18,13 +18,15 @@ npm install
 
 <br />
 
-Renomeie o arquivo `.env.example` na raiz do projeto para `.env` e altere os valores
+Renomeie o arquivo `.env.example` na raiz do projeto para `.env` e altere o IP(http://192.168.0.45) para o IP da sua máquina
 
 <br />
-
-Execute a aplicação e rode o comando no terminal.
+Com a api rodando, execute a aplicação e rode o comando no terminal.
 
 ```
 npm run android
+
+ou
+
 npm run ios
 ```
