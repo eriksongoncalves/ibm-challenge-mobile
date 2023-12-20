@@ -29,7 +29,7 @@ export const CardImages = styled.View`
 export const Details = styled.View`
   width: 100%;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   margin-top: 40px;
 `;
@@ -48,7 +48,7 @@ export const Brand = styled.Text`
 export const Model = styled.Text`
   ${({ theme }) => css`
     font-family: ${theme.fonts.family.inter.regular};
-    font-size: ${RFValue(25)}px;
+    font-size: ${RFValue(20)}px;
     color: ${theme.colors.gray_600};
     margin-top: -8px;
   `}
@@ -57,8 +57,9 @@ export const Model = styled.Text`
 export const Price = styled.Text`
   ${({ theme }) => css`
     font-family: ${theme.fonts.family.inter.regular};
-    font-size: ${RFValue(25)}px;
+    font-size: ${RFValue(20)}px;
     color: ${theme.colors.red_main};
+    margin-top: 8px;
   `}
 `;
 
