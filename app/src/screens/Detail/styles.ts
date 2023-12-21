@@ -50,7 +50,6 @@ export const Model = styled.Text`
     font-family: ${theme.fonts.family.inter.regular};
     font-size: ${RFValue(20)}px;
     color: ${theme.colors.gray_600};
-    margin-top: -8px;
   `}
 `;
 
