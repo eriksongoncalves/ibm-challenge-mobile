@@ -21,6 +21,9 @@ export const Header = styled.View`
     flex-direction: row;
     align-items: center;
     margin-bottom: 16px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   `}
 `;
 
