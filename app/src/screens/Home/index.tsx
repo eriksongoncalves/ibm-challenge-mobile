@@ -1,16 +1,23 @@
 import React, { useState, useEffect } from 'react';
-import { StatusBar, View, ActivityIndicator } from 'react-native';
+import {
+  StatusBar,
+  View,
+  ActivityIndicator,
+  TouchableOpacity
+} from 'react-native';
 import { useNavigation, useIsFocused } from '@react-navigation/native';
-import { AntDesign } from '@expo/vector-icons';
+import { AntDesign, MaterialIcons } from '@expo/vector-icons';
 
 import * as S from './styles';
 import { CardCar } from '../../components';
 import { Car } from '../../shared/types';
 import { getCars } from '../../services/car';
+import { useAuth } from '../../hooks/auth';
 
 function Home() {
   const navigation = useNavigation();
   const screenIsFocus = useIsFocused();
+  const { signOut } = useAuth();
   const [cars, setCars] = useState<Car[]>([] as Car[]);
   const [loading, setLoading] = useState(true);
 
@@ -45,6 +52,9 @@ function Home() {
 
       <S.Header>
         <S.Title>Lista de carros</S.Title>
+        <TouchableOpacity onPress={signOut}>
+          <MaterialIcons name="logout" size={24} color="white" />
+        </TouchableOpacity>
       </S.Header>
 
       {loading ? (
